@@ -47,7 +47,6 @@ const { categoryData } = useCategory()
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 
