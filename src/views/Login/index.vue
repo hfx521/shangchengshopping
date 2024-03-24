@@ -15,8 +15,8 @@ const userStore = useUserStore()
 
 // 1. 准备表单对象
 const form = ref({
-  account: '18610848230',
-  password: '123456',
+  account: 'heima286',
+  password: 'hm#qd@23!',
   agree: true
 })
 
@@ -54,6 +54,7 @@ const doLogin = () => {
   formRef.value.validate(async (valid) => {
     // valid: 所有表单都通过校验  才为true
     console.log(valid)
+    //valid所有表单都通过校验 才为true
     // 以valid做为判断条件 如果通过校验才执行登录逻辑
     if (valid) {
       // TODO LOGIN

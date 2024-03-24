@@ -8,6 +8,7 @@ const router = useRouter()
 // 获取结算信息
 const checkInfo = ref({}) // 订单对象
 const curAddress = ref({}) // 默认地址
+// 定义获取数据的方法
 const getCheckInfo = async () => {
   const res = await getCheckInfoAPI()
   checkInfo.value = res.result
@@ -16,7 +17,7 @@ const getCheckInfo = async () => {
   const item = checkInfo.value.userAddresses.find(item => item.isDefault === 0)
   curAddress.value = item
 }
-
+// 钩子函数
 onMounted(() => getCheckInfo())
 
 // 控制弹框打开

@@ -89,6 +89,7 @@ const allCheck = (selected) => {
           <span class="red">¥ {{ cartStore.selectedPrice.toFixed(2) }} </span>
         </div>
         <div class="total">
+          <!-- 下单结算跳转路由 -->
           <el-button size="large" type="primary" @click="$router.push('/checkout')">下单结算</el-button>
         </div>
       </div>
